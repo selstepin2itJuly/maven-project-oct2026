@@ -31,8 +31,9 @@ public class PIMTest {
     public void TC008_Search_Employee_With_Employment_Status() throws InterruptedException {
         logger.info("Starting TC008_Search_Employee_With_Employment_Status");
 
-        String employeeName = "Peter Mac";
-        String employmentStatus = "Full-Time";
+        String employeeName = "";
+        String employmentStatus = "Full-Time Contract";
+
 
         pimpage.searchEmployeeByName(employeeName);
         pimpage.selectEmploymentStatus(employmentStatus);
