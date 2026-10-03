@@ -39,6 +39,12 @@ public class Base {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.elementToBeClickable(ele));
 	}
+	public void waitForElementVisible(WebDriver driver, WebElement ele)
+	{
+		logger.info("Wait for Element->\""+ele+"\" for 15 sec");
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		wait.until(ExpectedConditions.visibilityOf(ele));
+	}
 	
 	public void attachScreenshotToTestNg(WebDriver driver) throws InterruptedException {
 		Thread.sleep(3000);
