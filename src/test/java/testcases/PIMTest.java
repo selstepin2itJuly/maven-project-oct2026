@@ -34,6 +34,7 @@ public class PIMTest {
         String employeeName = "";
         String employmentStatus = "Full-Time Contract";
 
+
         pimpage.searchEmployeeByName(employeeName);
         pimpage.selectEmploymentStatus(employmentStatus);
         pimpage.clickSearchButton();
