@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+  <groups>
+    <run>
+      <include name="sanity"/>
+    </run>
+  </groups>
+    <classes>
+      <class name="testcases.LoginTest"/>
+      <class name="testcases.AdminTest"/>
+      <class name="testcases.MyInfoTest"/>
+      <class name="testcases.LoginTestDataProvider"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
